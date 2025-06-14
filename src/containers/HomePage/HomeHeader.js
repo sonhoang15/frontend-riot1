@@ -37,6 +37,11 @@ class HomeHeader extends Component {
         this.props.processLogout();
         this.props.history.push('/login');
     };
+    confirmLogout = () => {
+        if (window.confirm("Bạn có muốn logout không?")) {
+            this.handleLogout();
+        }
+    };
 
 
     render() {
@@ -160,11 +165,7 @@ class HomeHeader extends Component {
                                                 {userInfo && userInfo.roleid ? (
                                                     // Đã đăng nhập
                                                     <span className="sign-in" style={{ cursor: "pointer" }}
-                                                        onClick={() => {
-                                                            if (window.confirm("Bạn có muốn logout không?")) {
-                                                                this.handleLogout();
-                                                            }
-                                                        }}>
+                                                        onClick={this.confirmLogout}>
                                                         <FormattedMessage id="homeheader.welcome" />
                                                         {userInfo.firstname}!
                                                     </span>
