@@ -92,7 +92,9 @@ class ContentManages extends Component {
             }))
         });
         try {
-            let res = await fetch(`http://localhost:8080/api/all-location?pageId=${selectedOption.value}`);
+            let res = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/all-location?pageId=${selectedOption.value}`, {
+                credentials: 'include'
+            });
             let data = await res.json();
             if (data.errCode === 0) {
                 let locationOptions = data.data.map(loc => ({

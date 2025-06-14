@@ -47,8 +47,6 @@ class HomeHeader extends Component {
     render() {
         // let language = this.props.language;
         const { processLogout, language, userInfo } = this.props;
-        console.log("check", this.props.userInfo)
-        console.log(this.props.userInfo)
 
         return (
             <React.Fragment>

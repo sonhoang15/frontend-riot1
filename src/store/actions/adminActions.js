@@ -262,7 +262,6 @@ export const getAllLocation = () => {
     return async (dispatch, getState) => {
         try {
             let res = await getAllLocationService(4);
-            console.log("check res", res)
             if (res && res.errCode === 0) {
                 dispatch({
                     type: actionTypes.FETCH_LOCATION_PAGES_SUCCESS,
