@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+.banner-container {
+    .banner-infor {
+        position: relative;
+        top: 80px;
+        height: 733px;
+
+        .background-img {
+            object-fit: fill;
+            top: auto;
+            bottom: 20%;
+            width: 100%;
+            height: 70%;
+            position: absolute;
+            inset: 0px;
+            overflow: hidden;
+
+
+            .layout-img {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                inset: 0px;
+
+                .background-image {
+                    position: relative;
+                    transform: scale(1.1);
+                    filter: blur(16px);
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    overflow: visible;
+                }
+            }
+        }
+
+        .width-medium {
+            max-width: calc(var(--max-blade-content) - (2 * var(--blade-content-increment)));
+            --max-blade-content: 1750px;
+            --blade-content-increment: 320px;
+            margin: 0px auto;
+            padding-left: 48px;
+            padding-right: 48px;
+            width: 100%;
+            padding-top: 48px;
+
+
+            .banner-image {
+                position: relative;
+                margin: 0px auto;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                overflow: visible;
+                border: none;
+                max-width: 100%;
+                --max-blade-content: 1920px;
+                --blade-content-increment: 320px;
+            }
+        }
+    }
+
+    .content-container {
+        position: relative;
+        padding-top: 48px;
+        display: flex;
+        flex-direction: column;
+        -webkit-box-align: center;
+        align-items: center;
+        gap: var(--spacer-variable-sm);
+
+        .header {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            -webkit-box-align: center;
+            align-items: center;
+            gap: 16px;
+
+            .title {
+                text-transform: uppercase;
+                font-family: 'Anton', sans-serif;
+                font-weight: 400;
+                word-break: break-word;
+                font-size: 64px;
+                line-height: 64px;
+                text-wrap: balance;
+            }
+
+            .richText {
+                font-family: 'Inter', sans-serif;
+                font-weight: 400;
+                text-wrap: wrap;
+                word-break: break-word;
+                font-size: 18px;
+                line-height: 28px;
+                color: rgb(24, 19, 38);
+            }
+        }
+
+        .divider {
+            width: 80%;
+            height: 4px;
+            border-top: 2px solid rgb(204, 203, 199);
+            border-bottom: 1px solid rgb(204, 203, 199);
+        }
+
+        .metadata-with-links {
+            display: flex;
+            flex-direction: column;
+            -webkit-box-align: center;
+            align-items: center;
+            gap: 16px;
+
+            .metadata {
+                font-family: 'Inter', sans-serif;
+                font-weight: 400;
+                text-wrap: wrap;
+                word-break: break-word;
+                font-size: 18px;
+                line-height: 28px;
+                color: rgb(24, 19, 38);
+                display: flex;
+
+                .metadata-button {
+                    text-decoration: none;
+                    color: rgb(255, 104, 7);
+                    cursor: pointer;
+                }
+
+                .authors {
+                    display: flex;
+                    -webkit-box-align: center;
+                    align-items: center;
+
+                    span {
+                        text-align: center;
+                        word-break: break-word;
+                    }
+                }
+
+                .authors::before {
+                    padding: 0px 8px;
+                    color: rgb(204, 203, 199);
+                    content: "|";
+                }
+
+                time::before {
+                    padding: 0px 8px;
+                    color: rgb(204, 203, 199);
+                    content: "|";
+                }
+
+            }
+        }
+    }
+}
+
+.document {
+    padding-top: 48px;
+    padding-bottom: 48px;
+
+    .document-text {
+        margin: 0px auto;
+        padding-left: 190px;
+        padding-right: 190px;
+        width: 100%;
+        padding-bottom: 15px;
+
+        .document-markdown {
+            font-weight: 400;
+            text-wrap: wrap;
+            word-break: break-word;
+            font-size: 18px;
+            line-height: 28px;
+            color: rgb(24, 19, 38);
+
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,166 @@
+.formroll {
+    position: fixed;
+    top: 0 !important;
+    width: 100% !important;
+    z-index: 9999999 !important;
+    pointer-events: none;
+    font-family: "Mark Pro", Arial, sans-serif;
+    height: 70%;
+    display: none;
+
+    &.show {
+        display: block !important; // Hiển thị form khi isOpen = true
+        pointer-events: auto;
+    }
+
+    &.hide {
+        display: none !important; // Ẩn form khi isOpen = false
+    }
+
+    .riotbar-application-switcher-fake-bg {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #f9f9f9;
+        animation: .15s forwards linear;
+    }
+
+    .switcher-content {
+        position: relative;
+        pointer-events: auto;
+        color: #111;
+        width: 100%;
+        padding: 0;
+        opacity: 1;
+        animation: 1s .15s forwards;
+
+        .switcher-tabs-wrapper {
+            // opacity: 0;
+            animation: .25s forwards;
+            animation-delay: .2s;
+            margin: 0;
+            padding: 24px 24px 0 24px;
+
+            .application-logo-wrapper {
+                position: relative;
+                display: inline-block;
+                height: 50px;
+                margin-left: 42px;
+                width: 75px;
+                cursor: pointer;
+
+                .application-logo {
+                    margin: 0;
+                    cursor: pointer;
+                    display: inline-block;
+                    position: absolute;
+                    top: 3px;
+                    left: -30px;
+                }
+
+                .switcher-riot-logo {
+                    width: 85px;
+                    height: 27px;
+                }
+
+                .switcher-riot-logo-up {
+                    position: absolute;
+                    top: 10px;
+                    left: 87px;
+                    fill: #7e7e7e;
+                    width: 8px;
+                    height: 5px;
+                }
+
+                svg:not(:root) {
+                    overflow: hidden;
+                }
+
+            }
+
+
+        }
+
+        .switcher-desktop-close {
+            position: absolute;
+            top: 25px;
+            right: 34px;
+            cursor: pointer;
+
+            svg {
+                vertical-align: middle;
+                display: inline-block;
+                width: 32px;
+                height: 32px;
+                border-radius: 12px;
+            }
+
+            svg:not(:root) {
+                overflow: hidden;
+            }
+        }
+    }
+
+    .switcher-content-wrapper {
+        .switcher-content-row {
+            .right-content {
+                display: flex;
+                gap: 16px;
+                width: 100%;
+                flex-direction: row;
+                max-width: 1920px;
+
+                .right-content-img {
+                    float: left;
+                    -webkit-animation: .25s forwards;
+                    animation: .25s forwards;
+                    display: block;
+                    visibility: visible;
+                    width: 50%;
+                    max-width: 452px;
+                    opacity: 1;
+
+                    a {
+                        display: block;
+                        position: relative;
+                        text-decoration: none;
+
+                        .card-image-wrapper {
+                            img {
+                                width: 100%;
+                                height: auto;
+                                max-width: 452px;
+                                border-radius: 8px;
+                                box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+                                transition: all .3s cubic-bezier(0.25, 0.8, 0.25, 1);
+                                display: block;
+                            }
+                        }
+
+                        .card-title-wrapper {
+                            font-family: "Mark Pro", Arial, sans-serif;
+
+                            h4 {
+                                color: #0a0a0a;
+                                margin: 16px 0 0 0;
+                                letter-spacing: .03em;
+                                width: 100%;
+                                position: static;
+                                display: inline-block;
+                                left: 0px;
+                                bottom: 8px;
+                                text-transform: unset;
+                                font-family: unset;
+                                font-weight: 300;
+                                font-size: 13px;
+                                line-height: 15.6px;
+                                text-align: left;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

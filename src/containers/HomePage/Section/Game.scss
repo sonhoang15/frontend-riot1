@@ -1,0 +1,194 @@
+.section-Game {
+    height: 100%;
+
+    .Game-block {
+        position: relative;
+        background-color: #1f1f1f;
+        color: #f9f9f9;
+        z-index: 0;
+        padding-top: 100px;
+
+        .container-Game-block {
+            padding-left: 80px;
+            padding-right: 80px;
+
+            &::after,
+            &::before {
+                content: "";
+                display: table;
+                box-sizing: border-box;
+            }
+        }
+
+        .our-games__title {
+            margin-bottom: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            h2 {
+                font-family: 'Riot Sans Latin', Arial, sans-serif;
+                letter-spacing: -.03em;
+                font-size: 48px;
+                font-weight: 700;
+                line-height: inherit;
+            }
+
+        }
+
+        .our-games__wrapper {
+            display: block;
+
+            .our-games__list {
+                text-align: center;
+                margin-left: -20px;
+                margin: 0;
+                padding: 0;
+
+                .our-games__item {
+                    text-align: left;
+                    margin: 0;
+                    list-style: none;
+                    width: 50%;
+                    padding-left: 20px;
+                    box-sizing: border-box;
+                    vertical-align: top;
+                    display: inline-block;
+                    margin-bottom: 50px;
+
+                    .game-card {
+                        position: relative;
+                        transition: all .2s ease-out;
+                        box-shadow: 0 4px 16px rgba(10, 10, 10, .2);
+                        cursor: pointer;
+
+                        .game-card_link {
+
+                            display: block;
+                            text-decoration: none;
+                            border-radius: 8px;
+
+                            img {
+                                width: 100%;
+                                border-radius: 8px;
+                            }
+                        }
+
+                        &::after {
+                            content: '';
+                            border: 2px solid rgba(249, 249, 249, .4);
+                            border-radius: 12px;
+                            top: -4px;
+                            left: -4px;
+                            right: -4px;
+                            bottom: -4px;
+                            padding: 2px;
+                            color: #f9f9f9;
+                            display: block;
+                            opacity: 0;
+                            pointer-events: none;
+                            position: absolute;
+                            transition: opacity .1s ease-out;
+                            z-index: 4;
+                            border: 2px solid rgba(249, 249, 249, .4);
+                            border: 0;
+                            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+                            -webkit-mask-composite: xor;
+                            mask-composite: exclude;
+                            --angle: -90deg;
+                            -webkit-animation: 8s rotate linear infinite;
+                            animation: 8s rotate linear infinite;
+                            background: linear-gradient(to bottom, #fff, rgba(255, 255, 255, .4));
+                            background: conic-gradient(from var(--angle), rgba(255, 255, 255, .8), rgba(255, 255, 255, .2), rgba(255, 255, 255, .8));
+                        }
+
+                        &:hover::after {
+                            opacity: 1;
+                        }
+                    }
+
+                    .game-card__content {
+                        padding: 24px 55px;
+                        width: 38%;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -ms-flex-direction: column;
+                        flex-direction: column;
+                        -ms-flex-pack: justify;
+                        justify-content: space-between;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        text-align: center;
+                        height: 100%;
+                        pointer-events: none;
+
+                        .game-card__logo {
+                            max-width: 180px;
+                            margin: auto;
+                            padding-bottom: 8px;
+
+                            img {
+                                max-width: 100%;
+                                width: auto;
+                                height: auto;
+                            }
+                        }
+
+                        .game-card-description {
+                            display: flex;
+
+                            .game-card-platforms {
+                                max-width: 140px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                max-width: 100px;
+                                padding: 2px 4px;
+                                border-radius: 16px;
+                                background-color: rgba(138, 136, 135, .2);
+                                margin: 0 auto;
+                                pointer-events: none;
+
+                                .icon {
+                                    width: 19px !important;
+                                    height: 19px !important;
+                                    line-height: 19px !important;
+
+                                    span {
+                                        display: -ms-flexbox;
+                                        display: flex;
+                                        -ms-flex-align: center;
+                                        align-items: center;
+                                        -ms-flex-pack: center;
+                                        justify-content: center;
+                                    }
+
+                                    .is-vhidden {
+                                        position: absolute !important;
+                                        clip: rect(0, 0, 0, 0) !important;
+                                        overflow: hidden !important;
+                                        height: 1px !important;
+                                        width: 1px !important;
+                                        padding: 0 !important;
+                                        margin: -1px !important;
+                                        border: 0 !important;
+                                    }
+
+                                    svg {
+                                        width: 19px !important;
+                                        height: 19px !important;
+                                        line-height: 19px !important;
+                                        vertical-align: top;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

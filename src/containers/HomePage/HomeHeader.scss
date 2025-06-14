@@ -1,0 +1,320 @@
+.home-header-banner {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: "FF Mark W05", Arial, sans-serif !important;
+
+    .header {
+
+
+        .riotbar-transparent {
+            position: sticky;
+            z-index: 20000;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: 0;
+            border: 0;
+        }
+
+
+
+        .home-header-container {
+            position: fixed;
+            top: 0;
+            font-family: "FF Mark W05", Arial, sans-serif;
+            font-size: 14px !important;
+            font-weight: bold;
+            height: 80px;
+            line-height: normal;
+            text-align: left;
+            width: 100%;
+            z-index: 3000000;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            background: rgba(155, 155, 155, 0.111);
+
+            .home-header-content {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-left: 36px;
+                width: 100%;
+                height: 100%;
+
+                .left-content {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+
+                    .logo-desginer {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+
+                        .logo-1 {
+                            .logo-riot {
+                                height: 35px;
+                                // margin-top: 22px;
+                                box-sizing: border-box;
+                                cursor: default;
+                                fill: white;
+                                cursor: pointer;
+                            }
+                        }
+
+                        .riotbar-app-switcher-trigger-arrow {
+                            margin-top: 10px;
+                            display: block;
+                            box-sizing: border-box;
+                            width: 7px;
+                            font-size: 11px;
+                            height: 0;
+                            fill: #7e7e7e;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .center-content {
+                    display: flex;
+                    flex: 1;
+                    align-items: center;
+                    justify-content: flex-start;
+
+                    .content-background {
+                        width: 100%;
+                        height: 100%;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        text-decoration: none;
+
+                        .logo-2 {
+                            display: block;
+                            margin-left: 10px;
+                            width: 34px;
+
+                            #Layer_1 {
+                                padding: 4px;
+
+                                .circle-icon-riot {
+                                    display: block;
+                                    margin-left: 10px;
+                                }
+                            }
+                        }
+
+                        .btn-document {
+                            margin-left: 20px;
+                            display: flex;
+
+                            .desktop-link-item {
+                                margin-left: 5px;
+                                padding: 7.5px 16px;
+                                font-weight: 700;
+                                text-align: center;
+
+                                a {
+                                    text-decoration: none !important;
+                                    color: white;
+                                    text-transform: uppercase;
+                                    font-size: 13px;
+                                    letter-spacing: .08em;
+
+                                    // font-family: Arial, Helvetica, sans-serif;
+                                    p {
+                                        margin: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+
+                }
+
+                .right-content {
+                    display: flex;
+                    padding-right: 32px;
+
+                    .earth-search-sign {
+                        justify-content: center;
+                        align-items: center;
+                        display: inline-flex;
+                        width: 100%;
+                        height: 100%;
+                        margin-left: 20px;
+
+                        .button-toggleLocaleMenu,
+                        .sign-in {
+                            margin-right: 25px;
+                            text-decoration: none;
+                            box-sizing: border-box;
+                            cursor: pointer;
+                            color: white;
+                        }
+
+                        .button-toggleLocaleMenu {
+                            position: relative;
+
+                            .dropdown-content {
+                                display: none;
+                                position: absolute;
+                                top: 100%; // 👈 nằm dưới icon
+                                right: 0;
+                                text-align: center;
+                                min-width: 120px;
+                                background-color: rgb(242, 255, 0);
+                                padding: 1rem;
+                                margin-top: 0.5rem;
+                                border-radius: 0.5rem;
+                                z-index: 10;
+                                box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+                                left: -50px;
+
+                                .language-vi {
+                                    cursor: pointer;
+                                    padding-bottom: 5px;
+
+                                    &.action {
+                                        span {
+                                            color: red;
+                                        }
+                                    }
+                                }
+
+                                .language-en {
+                                    cursor: pointer;
+
+                                    &.action {
+                                        span {
+                                            color: blue;
+                                        }
+                                    }
+                                }
+
+                                &::after {
+                                    content: "";
+                                    height: 55%;
+                                    position: absolute;
+                                    top: 10px;
+                                    left: 0;
+                                    right: 0;
+                                    background-color: transparent;
+                                    transform: translateY(-100%);
+                                }
+                            }
+
+
+
+                            &:hover .dropdown-content {
+                                display: block;
+                            }
+                        }
+
+
+                        .sign {
+                            padding: 0 6px 0 6px;
+
+                            .sign-in {
+                                font-weight: 600;
+                                font-size: 13px;
+                                color: #111111;
+                                z-index: 0;
+                                background-color: #d13639;
+                                border-radius: 28px;
+                                padding: 9.6px 20.4px;
+                                margin: 18px 0 20px;
+                                text-transform: uppercase;
+                            }
+                        }
+
+                        .search {
+                            --padding: 3.8px 22.4px;
+
+                            width: 185px;
+                            display: flex;
+                            align-items: center;
+                            padding: var(--padding);
+                            border-radius: 24px;
+                            border: 1px solid white;
+
+                            /* background: #f6f6f6; */
+                            .search-input {
+                                width: 120px;
+                                font-size: 16px;
+                                color: #333333;
+                                outline: none;
+                                border: white;
+                                background: transparent;
+                            }
+
+                            .search-input::placeholder {
+                                color: white;
+                                text-transform: uppercase;
+                                font-size: 12px;
+                                font-weight: 600;
+                            }
+
+                            .search-icon {
+                                fill: white;
+                                width: 19px;
+                                height: 20px;
+                                line-height: 20px;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .banner {
+            background: linear-gradient(275deg, rgba(10, 10, 10, 0) 0, rgba(10, 10, 10, .8) 120%);
+            width: 100%;
+            height: 100%;
+
+            .home-header-intro {
+                clip-path: none;
+                height: calc(100vh - 120px);
+                min-height: 600px;
+                max-height: 900px;
+                position: relative;
+                display: flex;
+                align-items: center;
+                z-index: 1;
+
+                .banner-conent {
+                    overflow: hidden;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        left: 0;
+                        top: 0;
+                        background: linear-gradient(275deg, rgba(10, 10, 10, 0) 0, rgba(10, 10, 10, .8) 120%);
+                    }
+
+                    video {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        display: inline-block;
+                        vertical-align: baseline;
+                    }
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,221 @@
+.switcher-content-wrapper {
+    position: absolute;
+    overflow-x: auto;
+    padding: 0 10px 32px;
+    z-index: 10;
+    top: 80px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    .switcher-content-row {
+        display: flex;
+        padding: 0px 24px;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        flex: 1;
+        gap: 16px;
+        max-width: 1920px;
+
+        .switcher-links-wrapper {
+            width: 100%;
+            columns: 10em 3;
+            column-gap: 10px;
+
+            .menu-product-section {
+                overflow-x: auto;
+                width: 100%;
+                display: block;
+                break-inside: avoid;
+                padding-bottom: 16px;
+
+                .switcher-menu-link-title {
+                    background: rgba(186, 186, 186, .1);
+                    border-radius: 6.4px;
+                    width: 100%;
+                    position: static;
+                    height: 32px;
+                    margin: 0px;
+                    padding: 8px 12px 8px 16px;
+                    font-size: 13px;
+                    text-align: left;
+                    font-weight: bold;
+                    line-height: 120%;
+                    letter-spacing: .08em;
+                    text-transform: uppercase;
+                    color: #0a0a0a;
+
+                    svg {
+                        position: absolute;
+                        display: none;
+                        right: 12px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        transition-property: transform;
+                        transition: .3s cubic-bezier(0, 2, 0.8, 1.5);
+                    }
+                }
+
+                .menu-link-wrapper {
+                    .product-title {
+                        width: 100%;
+                        position: static;
+                        height: auto;
+                        margin: 4px 0px;
+                        font-size: 13px;
+                        line-height: 120%;
+                        color: #4a4a4a;
+
+                        a {
+                            text-decoration: none;
+                            color: inherit;
+
+                            .product-card {
+                                display: none;
+                                visibility: hidden;
+
+                                .product-card-wrapper .switcher-menu-product-card-wrapper {
+                                    transition: opacity .5s cubic-bezier(0.06, 0.81, 0, 0.98) 0s, visibility 5s;
+                                    animation-delay: .1s;
+                                    -webkit-animation: .25s forwards;
+                                    animation: .25s forwards;
+                                    opacity: 1;
+                                    visibility: visible;
+                                    display: block;
+                                }
+
+                                .product-card-wrapper {
+                                    display: none;
+                                    visibility: hidden;
+                                    position: relative;
+                                    max-width: 914px;
+                                    width: 100%;
+                                    opacity: 0;
+                                    height: auto;
+                                    box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+                                    border-radius: 8px;
+
+                                    .switcher-fake-bg {
+                                        width: 100%;
+                                        padding-top: 45%;
+                                    }
+
+                                    .product-card-img {
+                                        position: absolute;
+                                        right: 0;
+                                        top: 0;
+                                        border-top-right-radius: 8px;
+                                        border-bottom-right-radius: 8px;
+                                        width: auto;
+                                        height: 100%;
+                                        max-width: 100%;
+                                        object-fit: cover;
+                                        vertical-align: bottom;
+                                        border: 0;
+                                    }
+
+                                    .product-card-logo {
+                                        position: absolute;
+                                        left: 0;
+                                        top: 0;
+                                        width: 50%;
+                                        height: 100%;
+                                        border-top-left-radius: 8px;
+                                        border-bottom-left-radius: 8px;
+                                        text-align: center;
+                                        clip-path: polygon(77% 0, 63% 90%, 100% 100%, 100% 101%, 0% 101%, 0% 0%);
+                                        background-image: radial-gradient(160.43% 179.54% at 100.43% 100%, rgb(88, 111, 119) 0%, rgb(10, 10, 10) 70%);
+
+                                        .product-card-logo-wrapper {
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: space-around;
+                                            align-items: center;
+                                            width: 76%;
+                                            padding: 13% 8% 7.5% 0%;
+                                            height: 100%;
+
+                                            .product-card-frame-title {
+                                                width: 100%;
+                                                flex-grow: 7;
+                                                display: flex;
+                                                align-items: center;
+                                                max-width: 65%;
+
+                                                img {
+                                                    width: 100%;
+                                                    height: auto;
+                                                    max-width: 100%;
+                                                    vertical-align: bottom;
+                                                    border: 0;
+                                                }
+                                            }
+
+                                            .product-card-frame-description {
+                                                flex-grow: 1;
+                                                display: flex;
+                                                text-align: center;
+                                                text-transform: uppercase;
+                                                align-items: flex-end;
+                                                max-width: 80%;
+
+                                                span {
+                                                    font-size: calc(40.5% + .4vw);
+                                                    color: #c7c7c7;
+                                                    vertical-align: bottom;
+                                                    line-height: 120%;
+                                                    left: calc(50% - 88px);
+                                                }
+                                            }
+
+                                            .product-icon {
+                                                flex-grow: 0;
+                                                height: 11%;
+
+                                                .product-icon-wrapper {
+                                                    margin-top: 11px;
+                                                    padding: 0 8px;
+                                                    width: auto;
+                                                    align-content: center;
+                                                    text-align: center;
+                                                    vertical-align: middle;
+                                                    border-radius: 16px;
+                                                    background-color: rgba(128, 128, 128, .2);
+                                                    display: inline-block;
+
+                                                    .product-icon-frame-title {
+                                                        float: left;
+                                                        padding: 0 4px 2px;
+
+                                                        .product-icon-frame-description {
+                                                            height: 11px;
+                                                            width: 11px;
+                                                            fill: #f9f9f9;
+                                                            pointer-events: none;
+                                                        }
+
+                                                        svg:not(:root) {
+                                                            overflow: hidden;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                    }
+                                }
+                            }
+
+                            span {
+                                display: block;
+                                visibility: visible;
+                                padding: 8px 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

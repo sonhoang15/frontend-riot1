@@ -1,0 +1,54 @@
+{
+    "homeheader": {
+        "who-are-we": "who are we",
+        "Work-with-us": "Work with us",
+        "News": "News",
+        "sign-in": "sign in",
+        "welcome": "welcome "
+    },
+    "menu": {
+        "system": {
+            "header": "System",
+            "system-administrator": {
+                "header": "System Administrator",
+                "user-manage": "User manage",
+                "user-redux": "Manage user redux"
+            },
+            "system-parameter": {
+                "header": "System-parameter"
+            }
+        },
+        "admin": {
+            "manage-user": "Manage user",
+            "manage-content": "Manage content",
+            "crud-user": "CRUD-user",
+            "crud-admin": "CRUD-admin"
+        }
+    },
+    "manage-user": {
+        "add": "add user",
+        "password": "Password",
+        "firstname": "First name",
+        "lastname": "Last name",
+        "email": "Email",
+        "phone": "Phone",
+        "address": "Address",
+        "roleid": "Roleid",
+        "gender": "Gender ",
+        "save": "Save",
+        "edit": "Save changes"
+    },
+    "new-feed": {
+        "titlle": "What's happening?",
+        "location1": "Celebrate Pride 2025: League and TFT",
+        "location2": "LoL and VALORANT Esports Partnering with Coinbase",
+        "location3": "5 Years of VALORANT // Act 3 Kickoff Trailer",
+        "location4": "Celebrating 5 Years of VALORANT",
+        "location5": "Now Available – Multi-Factor Authentication on Riot Mobile"
+    },
+    "ALL": {
+        "Game": "Game",
+        "Esports": "Esports",
+        "Entertainment": "Entertainment"
+    }
+}

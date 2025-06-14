@@ -1,0 +1,54 @@
+{
+    "homeheader": {
+        "who-are-we": "chúng tôi là ai",
+        "Work-with-us": "làm việc cùng chúng tôi",
+        "News": "Tin tức",
+        "sign-in": "đăng nhập",
+        "welcome": "xin chào "
+    },
+    "menu": {
+        "system": {
+            "header": "Hệ thống",
+            "system-administrator": {
+                "header": "Quản trị hệ thống",
+                "user-manage": "Quản lý người sử dụng",
+                "user-redux": "Quản lý user redux"
+            },
+            "system-parameter": {
+                "header": "Tham số hệ thống"
+            }
+        },
+        "admin": {
+            "manage-user": "Quản lý người dùng",
+            "crud-user": "CRUD-người dùng",
+            "crud-admin": "CRUD-quản trị viên",
+            "manage-content": "Quản lý nội dung"
+        }
+    },
+    "manage-user": {
+        "add": "Thêm người dùng",
+        "password": "Mật khẩu",
+        "firstname": "Tên",
+        "lastname": "Họ",
+        "email": "Email",
+        "phone": "Điện thoại",
+        "address": "Địa chỉ",
+        "roleid": "Vai trò",
+        "gender": "Giới tính",
+        "save": "Lưu",
+        "edit": "Lưu Chỉnh sửa"
+    },
+    "new-feed": {
+        "titlle": "Chuyện gì đang xảy ra vậy?",
+        "location1": "Kỷ niệm Pride 2025: Liên minh và TFT",
+        "location2": "LoL và VALORANT Esports hợp tác với Coinbase",
+        "location3": "5 năm VALORANT // Đoạn giới thiệu khởi động Act 3",
+        "location4": "Kỷ niệm 5 năm VALORANT",
+        "location5": "Hiện đã có – Xác thực đa yếu tố trên Riot Mobile"
+    },
+    "ALL": {
+        "Game": "Trò chơi của chúng tôi",
+        "Esports": "Thể thao điện tử",
+        "Entertainment": "Giải trí"
+    }
+}

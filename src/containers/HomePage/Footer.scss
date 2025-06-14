@@ -1,0 +1,378 @@
+.footer {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+
+
+    .ruin-smoke-container {
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        right: 0;
+        z-index: 0;
+        overflow: hidden;
+        height: 80px;
+
+        .ruin-smoke-container__inner {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            display: none;
+
+            .ruin-smoke-1 {
+                left: -50%;
+                animation: smoke-billow-2 60s 0s 5 ease-in-out;
+                width: 800px;
+                height: 95px;
+                position: absolute;
+                top: 20px;
+                background-image: url(../../assets/images/smoke-2.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            .ruin-smoke-2 {
+                right: -50%;
+                animation: smoke-billow-1 60s -40s 5 ease-in-out;
+                width: 800px;
+                height: 65px;
+                position: absolute;
+                top: 20px;
+                background-image: url(../../assets/images/smoke-6.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            .ruin-smoke-3 {
+                animation: smoke-billow-3 60s -20s 5 ease-in-out;
+                display: block;
+                width: 800px;
+                height: 131px;
+                position: absolute;
+                top: 0;
+                right: 50%;
+                background-image: url(../../assets/images/smoke-4.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            .ruin-smoke-4 {
+                animation: smoke-billow-4 60s -300s 5 ease-in-out;
+                display: block;
+                width: 800px;
+                height: 131px;
+                position: absolute;
+                top: 0;
+                left: 40%;
+                background-image: url(../../assets/images/smoke-5.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+
+    .footer__inner {
+        padding-top: 0;
+        padding-bottom: 20px;
+        position: relative;
+        z-index: 1;
+        background-color: #252423;
+        padding: 60px 20px 40px;
+        color: #fff;
+        font-size: .688rem;
+        text-align: center;
+        -webkit-font-smoothing: antialiased;
+
+        .content-center {
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            max-width: 1440px;
+
+            .footer__row {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                max-width: 1440px;
+                margin: 0 auto;
+
+                .footer__col {
+                    .footer__col-inner {
+                        display: flex;
+                        -ms-flex-align: center;
+                        align-items: center;
+
+                        a {
+                            color: #fff;
+                            transition: all .3s ease-out;
+                            text-decoration: none;
+                        }
+
+                        .footer__logo {
+                            padding-right: 20px;
+                            display: inline-block;
+
+                            .icon {
+                                display: inline-block;
+                                vertical-align: middle;
+                                font-style: normal;
+
+                                .is-vhidden {
+                                    position: absolute !important;
+                                    clip: rect(0, 0, 0, 0) !important;
+                                    overflow: hidden !important;
+                                    height: 1px !important;
+                                    width: 1px !important;
+                                    padding: 0 !important;
+                                    margin: -1px !important;
+                                    border: 0 !important;
+                                }
+
+                                svg {
+                                    vertical-align: top;
+                                    height: auto;
+
+                                    path {
+                                        fill: #fff;
+                                        transition: all .3s ease-out;
+                                    }
+                                }
+
+                                svg:not(:root) {
+                                    overflow: hidden;
+                                }
+                            }
+                        }
+
+                        .footer__navigation {
+                            display: inline-block;
+                            padding-top: 0;
+                            text-align: left;
+                            vertical-align: middle;
+
+                            .is-hidden--js {
+                                display: none !important;
+                                text-align: left;
+
+                                .list--unstyled ul {
+                                    margin-bottom: 0;
+                                    margin: 0;
+                                    padding: 0;
+
+                                    li {
+                                        display: inline-block;
+                                        padding-left: 8px;
+                                        padding-right: 8px;
+                                        text-transform: uppercase;
+                                        margin-left: 0;
+                                        list-style: none;
+
+                                        a {
+                                            display: inline-block;
+                                            padding: 10px;
+                                            font-size: 11px;
+                                            font-weight: 800;
+                                            color: #fff;
+                                            letter-spacing: -.03em;
+                                            transition: all .3s ease-out;
+                                            text-decoration: none;
+                                        }
+                                    }
+                                }
+                            }
+
+                            nav {
+                                display: block;
+                                margin: 0;
+                                padding: 0;
+
+                                .list--unstyled {
+                                    margin-bottom: 0;
+
+                                    li {
+                                        padding-left: 8px;
+                                        padding-right: 8px;
+                                        display: inline-block;
+                                        text-transform: uppercase;
+                                        margin-left: 0;
+                                        list-style: none;
+
+                                        a {
+                                            display: inline-block;
+                                            padding: 10px;
+                                            font-size: 11px;
+                                            font-weight: 800;
+                                            color: #fff;
+                                            letter-spacing: -.03em;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .footer__cookie {
+                        padding-top: 0;
+                        padding-bottom: 0;
+                        display: inline-block;
+
+                        button {
+                            padding-left: 0;
+                            background: 0;
+                            border: 0;
+                            display: inline-block;
+                            color: #fff;
+                            cursor: pointer;
+                            font-family: inherit;
+                            border-radius: 0;
+                            margin: 0;
+                            padding: 0;
+                            font-size: 15px;
+                        }
+                    }
+
+                    .footer__small {
+                        margin: 0;
+                        padding: 0;
+                        font-size: 12px;
+
+                        .icon {
+                            margin-left: 10px;
+                            margin-right: 10px;
+                            overflow: hidden;
+                            display: inline-block;
+                            vertical-align: middle;
+                            font-style: normal;
+                            font-size: inherit;
+
+                            svg {
+                                vertical-align: top;
+                                height: auto;
+                            }
+
+                            svg:not(:root) {
+                                overflow: hidden;
+
+                                path {
+                                    fill: #fff;
+                                    transition: all .3s ease-out;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .footer__socialList {
+                align-self: flex-start;
+
+                .footer__social {
+                    white-space: nowrap;
+
+                    a {
+                        width: 40px;
+                        height: 40px;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        .icon {
+                            display: inline-block;
+                            vertical-align: middle;
+                            font-style: normal;
+
+                            .is-vhidden {
+                                position: absolute !important;
+                                clip: rect(0, 0, 0, 0) !important;
+                                overflow: hidden !important;
+                                height: 1px !important;
+                                width: 1px !important;
+                                padding: 0 !important;
+                                margin: -1px !important;
+                                border: 0 !important;
+                            }
+
+                            svg {
+                                vertical-align: top;
+                                height: auto;
+
+                                path {
+                                    fill: #fff;
+                                    transition: all .3s ease-out;
+                                }
+
+                                ellipse {
+                                    fill: #fff;
+                                    transition: all .3s ease-out;
+                                }
+                            }
+
+                            svg:not(:root) {
+                                overflow: hidden;
+
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .separator {
+            height: 2px;
+            width: 100%;
+            max-width: 1440px;
+            margin: 0 auto;
+            background-image: url(../../assets/images/distressed-stroke.svg);
+            background-repeat: repeat-x;
+            background-position: 50% 50%;
+            background-size: 420px 2px;
+        }
+
+        .is-hidden-desktop {
+            display: none !important;
+        }
+
+        .footer__top-link {
+            text-transform: uppercase;
+            font-size: .875rem;
+            line-height: 1.571;
+            color: #d1363a;
+            font-family: 'Inter V Latin', Arial, sans-serif;
+            letter-spacing: -.03em;
+
+            a {
+                font-size: .875rem;
+                color: #fff;
+                transition: all .3s ease-out;
+                text-decoration: none;
+
+                .icon {
+                    margin-left: 10px;
+                    vertical-align: 0;
+                    display: inline-block;
+                    font-style: normal;
+
+                    svg {
+                        vertical-align: top;
+                        height: auto;
+
+                        path {
+                            fill: #fff;
+                            transition: all .3s ease-out;
+                        }
+                    }
+
+                    svg:not(:root) {
+                        overflow: hidden;
+                    }
+
+                }
+            }
+        }
+    }
+}
